@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*, 
+*::after, 
+*::before { 
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1440px;
+    height: 100vh;
+    background: #F3F5FC;
+    padding: 2.5rem 2.5rem 0;
+    margin: 0 auto;
+}
+
+header {
+    height: 48px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+    flex: 1;
+}
+
+.texto-normal {
+    width: 680px;
+    border: 1px solid red;
+    margin: 80px 80px 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid yellow;
+}
+
+.caixa-texto {
+    height: 100%;
+    border: 1px solid blue;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 48px;
+    background-color: transparent;
+    border-color: transparent;
+    /* clear from all borders */
+}
+
+form p {
+    font-size: 12px;
+    color: #495057;
+    line-height: 18px;
+}
+
+form p::before {
+    vertical-align: top;
+    line-height: 18px;
+    margin-right: 8px;
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg?color=%23495057');
+}
+
+.caixa-bot {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 32px 0;
+}
+
+input {
+    width: 328px;
+    height: 67px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+input:first-of-type {
+    background: #0A3871;
+    color: #FFF;
+    border: none;
+}
+
+.texto-criptografado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    margin: -48px 0 40px;
+    padding: 35px;
+    border-radius: 35px;
+    box-shadow: 0  24px 32px -8px rgba(0, 0, 0, 0.08);
+    background-color: #FFF;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.texto-criptografado > h2 {
+    font-size: 24px;
+    padding: 35px 0 16px;
+}
+
+.texto-criptografado p {
+    line-height: 24px;
+}
+
+footer {
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid red;
+}
