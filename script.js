@@ -1,6 +1,9 @@
 const encriptadorBtn = document.querySelector(".encriptador");
 const descriptadorBtn = document.querySelector(".descriptador");
+const limparBtn = document.querySelector(".limpar");
+const colarBtn = document.querySelector(".colar");
 const copiarBtn = document.querySelector(".copiar-textoCriptografado");
+
 
 function sobreporCriptografia() {
     document.querySelector(".texto-criptografado").style.display = "none"; 
@@ -71,7 +74,18 @@ function copiarTexto() {
     
     // Removendo a seleção do texto copiado
     textoCopiado.blur();
+}
 
+function colarTexto() {
+    navigator.clipboard.readText().then(
+        cliptext => (document.querySelector("textarea").value = cliptext), 
+        err => console.log(err));
+
+}
+
+function liparCampoTexto() {
+    document.querySelector("textarea").value = "";
+   
 }
 
 encriptadorBtn.addEventListener('click', function() {
@@ -96,13 +110,10 @@ copiarBtn.addEventListener('click', function() {
     copiarTexto();
 })
 
+limparBtn.addEventListener('click', function() {
+    liparCampoTexto();
+})
 
-
-
-
-
-
-/*
-COLOCAR UMA LIXEIRA PARA FAZER RESET DO INPUT
-# UM BOTÃO DE COLAR
-*/
+colarBtn.addEventListener('click', function () {
+    colarTexto();
+})
