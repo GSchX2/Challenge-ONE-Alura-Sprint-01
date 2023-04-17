@@ -1,5 +1,6 @@
-const encriptadorBotão = document.querySelector(".encriptador");
-const descriptadorBotão = document.querySelector(".descriptador");
+const encriptadorBtn = document.querySelector(".encriptador");
+const descriptadorBtn = document.querySelector(".descriptador");
+const copiarBtn = document.querySelector(".copiar-textoCriptografado");
 
 function sobreporCriptografia() {
     document.querySelector(".texto-criptografado").style.display = "none"; 
@@ -19,7 +20,6 @@ function validaçãoTexto() {
     }
     return true;
 }
-
 
 function criptografia(text) {
     return text.replaceAll("e", "enter")
@@ -50,12 +50,31 @@ function mostrarTextoDescriptografado() {
     const textoInput = document.querySelector("textarea").value;
     const resultadoCriptografia = document.querySelector(".resultado-criptografia");
     
-    const textodescriptografado = descriptografia(textoInput)
+    const textoDescriptografado = descriptografia(textoInput)
     
-    resultadoCriptografia.innerHTML = textodescriptografado;
+    resultadoCriptografia.innerHTML = textoDescriptografado;
 }
 
-encriptadorBotão.addEventListener('click', function() {
+function copiarTexto() {
+    // Pegando o campo de texto
+    const textoCopiado = document.querySelector(".resultado-criptografia")
+
+    // Selecionando o texto
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999);
+
+    // Copiando o texto selecionado
+    navigator.clipboard.writeText(textoCopiado.value);
+
+    // Alerta
+    alert("Texto copiado");
+    
+    // Removendo a seleção do texto copiado
+    textoCopiado.blur();
+
+}
+
+encriptadorBtn.addEventListener('click', function() {
     const isValid = validaçãoTexto();
 
     if (isValid) {
@@ -64,8 +83,7 @@ encriptadorBotão.addEventListener('click', function() {
     }
 })
 
-
-descriptadorBotão.addEventListener('click', function() {
+descriptadorBtn.addEventListener('click', function() {
     const isValid = validaçãoTexto();
 
     if (isValid) {
@@ -74,15 +92,17 @@ descriptadorBotão.addEventListener('click', function() {
     }  
 })
 
+copiarBtn.addEventListener('click', function() {
+    copiarTexto();
+})
+
+
 
 
 
 
 
 /*
-
-Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do ctrl+C ou da opção "copiar" do menu dos aplicativos. 
-
 COLOCAR UMA LIXEIRA PARA FAZER RESET DO INPUT
 # UM BOTÃO DE COLAR
 */
