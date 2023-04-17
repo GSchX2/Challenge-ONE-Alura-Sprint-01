@@ -57,6 +57,7 @@ textarea {
     background-color: transparent;
     border-color: transparent;
     resize: none;
+    outline: none;
 }
 
 .texto-normal  p {
@@ -81,17 +82,30 @@ textarea {
 button {
     width: 328px;
     height: 67px;
-    background: transparent;
+    background: #F3F5FC;
     color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
     padding: 24px;
+    cursor: pointer;
 }
 
 button:first-of-type {
     background: #0A3871;
     color: #FFF;
     border: none;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:first-of-type:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 1;
 }
 
 .texto-criptografado {
@@ -120,19 +134,6 @@ button:first-of-type {
     background-color: #FFF;
 }
 
-.texto-criptografado-ativo > p {
-    font-size: 24px;
-    line-height: 36px;
-    text-align: left;
-    color: #495057;
-}
-
-.texto-criptografado-ativo > button {
-    width: 100%;
-}
-
-
-
 .texto-criptografado > h2 {
     font-size: 24px;
     padding: 35px 0 16px;
@@ -140,6 +141,18 @@ button:first-of-type {
 
 .texto-criptografado p {
     line-height: 24px;
+}
+
+.resultado-criptografia {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    color: #495057;
+    margin-bottom: 35px;
+}
+
+.texto-criptografado-ativo > button {
+    width: 100%;
 }
 
 footer {
