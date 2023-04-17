@@ -15,6 +15,7 @@ function sobreporCriptografia() {
 
 function validaçãoTexto() {
     const textoInput = document.querySelector("textarea").value;
+    console.log(textoInput);
     const regex = /^[a-z0-9\s]+$/;
 
     if (!regex.test(textoInput)) {
@@ -78,7 +79,7 @@ function copiarTexto() {
 
 function colarTexto() {
     navigator.clipboard.readText().then(
-        cliptext => (document.querySelector("textarea").value = cliptext), 
+        cliptext => (document.querySelector("textarea").value += cliptext), 
         err => console.log(err));
 
 }
