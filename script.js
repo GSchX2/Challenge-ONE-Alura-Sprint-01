@@ -78,8 +78,11 @@ function copiarTexto() {
 }
 
 function colarTexto() {
+    // Lendo o texto do clipboard
     navigator.clipboard.readText().then(
-        cliptext => (document.querySelector("textarea").value += cliptext), 
+    // Escrendo o texto do clipboard no campo de texto
+        cliptext => (document.querySelector("textarea").value += cliptext),
+    // Exibir mensagem de erro caso haja algum 
         err => console.log(err));
 
 }
