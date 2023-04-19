@@ -15,7 +15,7 @@ function sobreporCriptografia() {
 function validaçãoTexto() {
     const textoInput = document.querySelector("textarea").value;
     console.log(textoInput);
-    const regex = /^[a-z0-9\s]+$/;
+    const regex = /^[a-z0-9,'"!?.\s]+$/;
 
     if (!regex.test(textoInput)) {
         alert("As condições necessárias para a ação não foram satisfeitas: \n - Utilize apenas letras minúsculas \n - Não use acentuação \n - Não use caracteres especiais");
