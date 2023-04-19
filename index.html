@@ -11,32 +11,34 @@
 </head>
 <body>
     <header>
-        <img src="Frame 6.png" width="120px" height="48px" alt="logo">
+        <img src="Top.png" width="32px" height="48px" alt="logo">
     </header>
     <main>     
-        <div class="texto-normal">
-            <div class="caixa-texto">
-                <textarea rows="1" placeholder="Digite seu texto"></textarea> 
+        <section>
+            <div class="texto-normal">
+                <div class="caixa-texto">
+                    <textarea rows="1" placeholder="Digite seu texto"></textarea>
+                </div>
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <div class="caixa-bot">
+                    <button class="encriptador">Criptografar</button>
+                    <button class="descriptador">Descriptografar</button>
+                </div>
             </div>
-            <p>Apenas letras minúsculas e sem acento.</p>
-            <div class="caixa-bot">             
-                <button class="encriptador">Criptografar</button>
-                <button class="descriptador">Descriptografar</button>
+            <div class="sidebar">
+                <button class="limpar"><i class="fa-solid fa-sm" style="color: #0a3871;">&#xf1f8;</i></button>
+                <button class="colar"><i class="fa-solid fa-sm" style="color: #0a3871;">&#xf0ea;</i></button>
             </div>
-        </div>
-        <div class="sidebar">
-            <button class="limpar"><i class="fa-solid fa-sm" style="color: #0a3871;">&#xf1f8;</i></button>
-            <button class="colar"><i class="fa-solid fa-sm" style="color: #0a3871;">&#xf0ea;</i></button>
-        </div>
-        <div class="texto-criptografado">
+        </section>
+        <section class="texto-criptografado">
             <img src="img01.png" width="336px" height="304px" alt="Pessoa ajoelhada observando um diamante através de uma lupa">
             <h2>Nenhuma mensagem encontrada</h2>
             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-        </div>
-        <div class="texto-criptografado-ativo" style="display: none">
+        </section>
+        <section class="texto-criptografado-ativo" style="display: none">
             <textarea class="resultado-criptografia" rows="1">Texto Criptografado</textarea>
             <button class="copiar-textoCriptografado">Copiar</button>
-        </div>
+        </section>
     </main>
     <footer>
         <p>&copy; Copyright - Desenvolvido por Guilherme</p>

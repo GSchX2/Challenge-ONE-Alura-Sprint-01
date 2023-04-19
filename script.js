@@ -4,7 +4,6 @@ const limparBtn = document.querySelector(".limpar");
 const colarBtn = document.querySelector(".colar");
 const copiarBtn = document.querySelector(".copiar-textoCriptografado");
 
-
 function sobreporCriptografia() {
     document.querySelector(".texto-criptografado").style.display = "none"; 
     
@@ -82,7 +81,7 @@ function colarTexto() {
     navigator.clipboard.readText().then(
     // Escrendo o texto do clipboard no campo de texto
         cliptext => (document.querySelector("textarea").value += cliptext),
-    // Exibir mensagem de erro caso haja algum 
+    // Exibe mensagem de erro caso haja algum 
         err => console.log(err));
 
 }
