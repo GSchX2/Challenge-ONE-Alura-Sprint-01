@@ -14,7 +14,7 @@ As "chaves" de criptografia que utilizaremos são:
 ### Requisitos:
 - Deve funcionar apenas com letras minúsculas
 - Não devem ser utilizados letras com acentos nem caracteres especiais 
-<br>(como na mensagem que foi nos dada no final do desafio possui caractecteres especiais eu possibilitei a utilização de pontuações básicas ["'.,?!])
+<br>(como na mensagem que foi nos dada no final do desafio possui caractecteres especiais eu possibilitei a utilização de pontuações básicas [" ' . , ? !])
 <br>(Mensagem secreta - "pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!")
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
 
