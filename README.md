@@ -1,5 +1,5 @@
 # Challenge-ONE-Alura-Sprint-01
-## Codificador/Decodificador
+## Codificador/Decodificador - [Link do site](https://gschx2.github.io/Challenge-ONE-Alura-Sprint-01/)
 
 ### Sobre o challenge:
 O desafio deste challenge era criar uma aplicação que criptografa texto. Foi nos dado um design em figma como base para a criação da aplicação (não sendo obrigatório sua aplicação, mas no caso desta aplicação alcançar a referência fez parte do desafio) e a seguinte lista de requisitos:
@@ -27,10 +27,9 @@ As "chaves" de criptografia que utilizaremos são:
 
 obs: essas funções foram adicionados pois durante o teste da aplicação copiar e colar o texto criptografado se tornou algo chato, ter que todo tempo selecionar todo texto e usar o ctrl+V, o que foi substituido por dois clicks.
 
+---
 Em adicional foi disponibilidado por meio da ferramenta Trello uma série de cards contendo informações sobre o desafio, ajuda e uma orgranização de passos a seguir durante o desenvolvimento da aplicação. 
 
 [Figma](https://www.figma.com/file/Jw7z5StEkWOySbYmByeEWE/Alura-Challenge---Desafio-1---L%C3%B3gica-(Copy)?node-id=0%3A1&t=yZwIZYeTo007mMmk-1) - link do design apresentado
-
-
 
 #challengeonedecodificador5
