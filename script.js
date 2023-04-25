@@ -83,7 +83,6 @@ function colarTexto() {
         cliptext => (document.querySelector("textarea").value += cliptext),
     // Exibe mensagem de erro caso haja algum 
         err => console.log(err));
-
 }
 
 function liparCampoTexto() {
@@ -109,14 +108,8 @@ descriptadorBtn.addEventListener('click', function() {
     }  
 })
 
-copiarBtn.addEventListener('click', function() {
-    copiarTexto();
-})
+copiarBtn.addEventListener('click', copiarTexto);
 
-limparBtn.addEventListener('click', function() {
-    liparCampoTexto();
-})
+limparBtn.addEventListener('click', liparCampoTexto);
 
-colarBtn.addEventListener('click', function () {
-    colarTexto();
-})
+colarBtn.addEventListener('click', colarTexto);
